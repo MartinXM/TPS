@@ -97,7 +97,7 @@ class WindowAttention3D(nn.Module):
         proj_drop (float, optional): Dropout ratio of output. Default: 0.0
     """
 
-    def __init__(self, dim, window_size, num_heads, qkv_bias=False, qk_scale=None, attn_drop=0., proj_drop=0., shift=False, shift_type='bsm'):
+    def __init__(self, dim, window_size, num_heads, qkv_bias=False, qk_scale=None, attn_drop=0., proj_drop=0., shift=False, shift_type='psm'):
 
         super().__init__()
         self.dim = dim
@@ -317,7 +317,7 @@ class SwinTransformerBlock3D(nn.Module):
 
     def __init__(self, dim, num_heads, window_size=(2,7,7), shift_size=(0,0,0),
                  mlp_ratio=4., qkv_bias=True, qk_scale=None, drop=0., attn_drop=0., drop_path=0.,
-                 act_layer=nn.GELU, norm_layer=nn.LayerNorm, use_checkpoint=False, shift=False, shift_type='bsm'):
+                 act_layer=nn.GELU, norm_layer=nn.LayerNorm, use_checkpoint=False, shift=False, shift_type='psm'):
         super().__init__()
         self.dim = dim
         self.num_heads = num_heads
