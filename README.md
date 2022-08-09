@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # TPS: Spatiotemporal Self-attention Modeling with Temporal Patch Shift for Action Recognition
 
 This repo is the official implementation of ["TPS"](https://arxiv.org/abs/2207.13259). It is based on [Video Swin](https://github.com/SwinTransformer/Video-Swin-Transformer).
@@ -109,7 +108,3 @@ If you find our work useful in your research, please cite:
   year={2022}
 }
 ```
-=======
-# TPS
-This is the official implementation of the paper TPS
->>>>>>> 99a0a4c112eb5fa1c5d1619d38b5168823ddda19
